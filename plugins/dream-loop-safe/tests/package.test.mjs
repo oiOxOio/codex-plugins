@@ -70,7 +70,7 @@ test('清单名称、版本、发布者和技能路径正确', () => {
 });
 
 test('清单不声明 hooks、MCP、应用或自动安装入口', () => {
-  assert.deepEqual(Object.keys(manifest).sort(), ['name', 'version', 'description', 'author', 'license', 'skills', 'interface'].sort());
+  assert.deepEqual(Object.keys(manifest).sort(), ['name', 'version', 'description', 'author', 'homepage', 'repository', 'license', 'keywords', 'skills', 'interface'].sort());
   for (const forbidden of ['hooks', 'hooks.json', '.mcp.json', 'mcp.json', '.app.json', 'package.json', 'scripts', 'node_modules']) {
     assert.ok(!existsSync(path.join(pluginRoot, forbidden)), forbidden);
   }

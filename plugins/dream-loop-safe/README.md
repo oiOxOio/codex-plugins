@@ -1,6 +1,6 @@
 # 安全视觉迭代 · dream-loop-safe
 
-**版本：0.1.0 · 开发者：Why.Ping · 市场：why-ping**
+**版本：0.1.1 · 开发者：Why.Ping · 市场：why-ping**
 
 面向 Codex 的中文视觉制作插件。将概念/参考、Blender 或 Three.js 实现、实际截图和视觉评审串成有界流程，默认最多三轮。适用于 3D 场景、WebGL 原型和已有图形应用的视觉改进。
 
@@ -23,7 +23,7 @@ codex plugin add dream-loop-safe@why-ping
 codex plugin list --json
 ```
 
-以上命令安装**所配置市场来源的当前版本**，不保证永远是 0.1.0。只有包含此插件的提交已进入该来源后才能找到它；开发 PR 未合入 main 时，普通 main 市场刷新不会得到该插件。固定版本与分支验收见[实机验收清单](tests/SMOKE-TEST.md)，使用独立 `CODEX_HOME`，不要覆盖日常市场来源或安装缓存。
+以上命令安装**所配置市场来源的当前版本**，不锁定某个版本。只有包含此插件的提交已进入该来源后才能找到它；开发 PR 未合入 main 时，普通 main 市场刷新不会得到该插件。固定版本与分支验收见[实机验收清单](tests/SMOKE-TEST.md)，使用独立 `CODEX_HOME`，不要覆盖日常市场来源或安装缓存。
 
 安装后新建一个 Codex 任务，显式调用 `$dream-loop-safe`。`agents/openai.yaml` 设置 `allow_implicit_invocation: false`，不因普通 3D 对话自动运行；没有启动钩子，也无需为本插件新增钩子信任。该元数据仍取决于客户端支持，应实际验证。
 

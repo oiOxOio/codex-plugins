@@ -1,17 +1,28 @@
 {
   "name": "dream-loop-safe",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "中文安全视觉迭代：手动启动概念、实现、截图与评审，适用于 Blender、Three.js 和 WebGL；默认最多三轮，不包含自动钩子或 MCP 服务。",
   "author": {
-    "name": "Why.Ping"
+    "name": "Why.Ping",
+    "url": "https://github.com/oiOxOio"
   },
+  "homepage": "https://github.com/oiOxOio/codex-plugins/blob/main/plugins/dream-loop-safe/README.md",
+  "repository": "https://github.com/oiOxOio/codex-plugins",
   "license": "MIT",
+  "keywords": [
+    "codex",
+    "visual-iteration",
+    "blender",
+    "threejs",
+    "webgl"
+  ],
   "skills": "./skills/",
   "interface": {
     "displayName": "安全视觉迭代",
     "shortDescription": "在明确权限与轮次预算内制作和改进 3D 视觉效果。",
     "longDescription": "面向 Codex 的中文视觉工作流，保留概念图、Blender 建模、浏览器截图和视觉评审。只在用户明确调用时使用，默认最多三轮；不自动安装依赖、不递归启动 Agent、不自动提交或推送。安全规则属于行为约束，不替代系统沙箱。",
     "developerName": "Why.Ping",
+    "websiteURL": "https://github.com/oiOxOio/codex-plugins",
     "category": "Productivity",
     "capabilities": [
       "Read",
