@@ -4,7 +4,7 @@
 
 插件标识：`auto-thread-title@why-ping`
 
-当前版本：`0.2.1` · [更新记录](CHANGELOG.md)
+当前版本：`0.2.2` · [更新记录](CHANGELOG.md)
 
 所属市场：[Why Ping Codex Plugins](https://github.com/oiOxOio/codex-plugins)
 
